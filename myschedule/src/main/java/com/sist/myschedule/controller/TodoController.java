@@ -32,7 +32,6 @@ public class TodoController {
     public ResponseEntity<?> createTodo(@RequestBody TodoDTO dto) {
         try {
             String temporaryUserId = "temporary-user";
-            // 제발....
             TodoEntity entity = TodoDTO.toEntity(dto);
             entity.setId(null);
             entity.setUserId(temporaryUserId);
