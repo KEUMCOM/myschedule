@@ -15,7 +15,6 @@ public class TodoService {
     private TodoRepository repository;
 
     public List<TodoEntity> create(final TodoEntity entity) {
-        //검증
         validate(entity);
 
         repository.save(entity);
